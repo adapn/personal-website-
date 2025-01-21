@@ -75,7 +75,7 @@ body {
 .project-link {
     position: absolute; /* Position it relative to the container */
     top: 50%; /* Vertically center the link */
-    right: 230px; /* Adjust spacing to the left of the resume button */
+    right: 130px; /* Adjust spacing to the left of the resume button */
     transform: translateY(-50%); /* Center vertically */
     color: rgb(236, 236, 236);
     text-decoration: none; /* Remove underline */
@@ -350,6 +350,65 @@ body {
         opacity: 0;
     }
 }
+
+
+
+/* Let's Connect Section Styling */
+#connect {
+    text-align: center;
+    padding: 80px 20px; /* Adjust spacing */
+}
+
+/* Heading and paragraph */
+#connect h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#connect p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: rgb(236, 236, 236);
+}
+
+/* Social Buttons Container */
+.connect-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between buttons */
+}
+
+/* Common Button Styling */
+.connect-button {
+    text-decoration: none;
+    color: rgb(236, 236, 236); /* Light text */
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent */
+    padding: 15px 25px; /* Button padding */
+    border-radius: 15px; /* Rounded corners */
+    font-size: 1rem; /* Match other buttons */
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover Effect */
+.connect-button:hover {
+    background-color: white; /* White background */
+    color: #333; /* Dark text */
+}
+
+/* GitHub Button */
+.github-button {
+    border: 2px solid #ffffff; /* Border for consistency */
+}
+
+/* LinkedIn Button */
+.linkedin-button {
+    border: 2px solid #0077B5; /* LinkedIn brand color */
+}
+
 
 
 

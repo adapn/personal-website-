@@ -20,7 +20,6 @@
                 <a href="#" class="home-link">HOME</a>
                 <a href="#experience" class="nav-link experience-link">EXPERIENCE</a>
                 <a href="#projects" class="nav-link project-link">PROJECTS</a>
-                <a href="#skills" class="nav-link skills-link">SKILLS</a>
                 <a href="resume.pdf" class="resume-link" target="_blank">RESUME</a>
             </div>
         </div>
@@ -135,9 +134,30 @@
 </section>
 
 <section id="projects" class="section">
-    <h2 class="text-left mb-5">projects💡</h2>
+    <h2 class="text-left mb-5">projects 💡</h2>
     <div class="container">
         <div class="row g-4">
+
+      <!-- STM32 PCB -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card">
+            <img src="STM32PCB.png" class="card-img-top" alt="Project Image">
+            <div class="card-body">
+                <h5 class="card-title">STM32 Embedded System Board Design</h5>
+                <p class="card-text">Designed a custom STM32F4-based PCB with an MPU6050 IMU and USB interface using Altium Designer. Gained hands-on experience in schematic capture, PCB layout, power management, and signal integrity for embedded systems.                </p>
+                <div class="d-flex justify-content-between align-items-center">
+        
+                    <a href="https://github.com/username/project" target="_blank" class="btn btn-outline-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
             <!-- FPGA -->
             <div class="col-md-6 col-lg-4">
                 <div class="card project-card">
@@ -147,7 +167,7 @@
                         <p class="card-text">Leveraged the Lattice ICE40 FPGA to develop hardware-based digital designs. Gained hands-on experience with fundamental VHDL and testbench practices.</p>
                         <div class="d-flex justify-content-between align-items-center">
                 
-                            <a href="https://github.com/username/project" target="_blank" class="btn btn-outline-secondary">
+                            <a href="https://github.com/adapn/FPGA-Development-with-the-Nandland-Go-Board" target="_blank" class="btn btn-outline-secondary">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                         </div>
@@ -171,6 +191,22 @@
             </div>
         </div>
     </div>
+                <!-- Spatial Mapping Plooter -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card">
+                        <img src="Spatial_Mapping_Process.png" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Spatial Mapping Plotter</h5>
+                            <p class="card-text">Integrated the a Time-of-Flight sensor and stepper motor with the MSP-EXP432E401Y microcontroller to develop a spatial mapping system. Gained hands-on experience in embedded systems, I2C and UART communication, and 3D data visualization using Python.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                    
+                                <a href="https://github.com/adapn/Spatial-Mapping-Plotter" target="_blank" class="btn btn-outline-secondary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
      <!-- Voltage Controlled Oscillator Synthesizer -->
      <div class="col-md-6 col-lg-4">
@@ -188,30 +224,26 @@
             </div>
         </div>
     </div>
-
-
-
-            <!-- Spatial Mapping Plooter -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card project-card">
-                    <img src="Spatial_Mapping_Process.png" class="card-img-top" alt="Project Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Spatial Mapping Plotter</h5>
-                        <p class="card-text">Integrated the a Time-of-Flight sensor and stepper motor with the MSP-EXP432E401Y microcontroller to develop a spatial mapping system. Gained hands-on experience in embedded systems, I2C and UART communication, and 3D data visualization using Python.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                
-                            <a href="https://github.com/adapn/Spatial-Mapping-Plotter" target="_blank" class="btn btn-outline-secondary">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<!-- Linear DC Power Supply (Move this up inside the same row) -->
+<div class="col-md-6 col-lg-4">
+    <div class="card project-card">
+        <img src="LinearDC.png" class="card-img-top" alt="Project Image">
+        <div class="card-body">
+            <h5 class="card-title">Linear DC Power Supply</h5>
+            <p class="card-text">The purpose of this project is to design and build a DC power supply capable of delivering 10mA at 3V± 0.1V from a 120V source with a frequency of 1kHz. The design includes a rectifier, filter, and regulator to ensure a stable DC output.</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="https://github.com/adapn/Linear-DC-Power-Supply" target="_blank" class="btn btn-outline-secondary">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
             </div>
-
-
-        
-
         </div>
+    </div>
+</div>
+
+      
+
+
+
     </div>
 </section>
 
@@ -220,30 +252,26 @@
 
 
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <p>
-                I'm always excited to collaborate on new projects or discuss opportunities. Feel free to reach out to me!
-            </p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+<!-- Let's Connect Section -->
+<section id="connect" class="section">
+    <h2>Let's Connect 🔗</h2>
+    <p>
+        Have a project in mind or want to discuss hardware and embedded systems?  
+        Connect with me on LinkedIn or check out my GitHub!
+    </p>
+    
+    <div class="connect-buttons">
+        <a href="https://github.com/adapn" target="_blank" class="connect-button github-button">GitHub</a>
+        <a href="https://www.linkedin.com/in/adam-poonah/" target="_blank" class="connect-button linkedin-button">LinkedIn</a>
+    </div>
+</section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
 
     <footer>
         <p>&copy; 2025 Adam Poonah. All rights reserved.</p>
     </footer>
+
+
     <script src="typing-effect.js"></script>
 </body>
 </html>
